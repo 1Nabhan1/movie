@@ -265,7 +265,8 @@ class _InnerState extends State<Inner> with TickerProviderStateMixin {
                     aspectRatio: 16 / 9,
                     autoPlayCurve: Curves.fastOutSlowIn,
                     enableInfiniteScroll: true,
-                    autoPlayAnimationDuration: const Duration(milliseconds: 800),
+                    autoPlayAnimationDuration:
+                        const Duration(milliseconds: 800),
                     viewportFraction: 0.3,
                   ),
                   items: widget.cimg.asMap().entries.map((entry) {
@@ -279,8 +280,10 @@ class _InnerState extends State<Inner> with TickerProviderStateMixin {
                             Container(
                               width: 100,
                               height: 100,
-                              margin: const EdgeInsets.symmetric(horizontal: 5.0),
-                              decoration: BoxDecoration(border: Border.all(color: Colors.orange),
+                              margin:
+                                  const EdgeInsets.symmetric(horizontal: 5.0),
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.orange),
                                 color: Colors.amber,
                                 borderRadius: BorderRadius.circular(100.0),
                               ),
